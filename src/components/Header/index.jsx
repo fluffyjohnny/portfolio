@@ -67,28 +67,43 @@ export default function index() {
             />
           </Magnetic>
         </div>
-        <div className={styles.nav}>
-          <Magnetic>
-            <div className={styles.el}>
-              <a href="#work">About</a>
-            </div>
-          </Magnetic>
-          <Magnetic>
-            <div className={styles.el}>
-              <a>Projects</a>
-            </div>
-          </Magnetic>
-          <Magnetic>
-            <div className={styles.el}>
-              <a>Skills</a>
-            </div>
-          </Magnetic>
-          <Magnetic>
-            <div className={styles.el}>
-              <a>Contact</a>
-            </div>
-          </Magnetic>
-        </div>
+        <div className={styles.navContainer}>
+          <div className={styles.nav}>
+            <Magnetic>
+              <div className={styles.el}>
+                <a href="#work">About</a>
+              </div>
+            </Magnetic>
+            <Magnetic>
+              <div className={styles.el}>
+                <a>Projects</a>
+              </div>
+            </Magnetic>
+            <Magnetic>
+              <div className={styles.el}>
+                <a>Skills</a>
+              </div>
+            </Magnetic>
+            <Magnetic>
+              <div className={styles.el}>
+                <a>Contact</a>
+              </div>
+            </Magnetic>
+          </div>
+            <iframe
+              className={styles.spotify}
+              src={
+                "https://open.spotify.com/embed/track/7hZnAqzJGdz58gS4XxRowB?utm_source=generator"
+              }
+              width={"85%"}
+              height={"80"}
+              frameBorder={"0"}
+              allow={
+                "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              }
+              loading={"lazy"}
+            ></iframe>
+          </div>
       </div>
       <div ref={button} className={styles.headerButtonContainer}>
         <Rounded onClick={scrollToTop} className={`${styles.button}`}>
