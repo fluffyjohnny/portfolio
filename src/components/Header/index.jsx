@@ -37,23 +37,33 @@ export default function index() {
       },
     });
 
-    const scroll = new LocomotiveScroll();
-    scrollRef.current = scroll;
+    scrollRef.current = new LocomotiveScroll({
+      el: document.querySelector("#scroll-container"),
+      smooth: true,
+    });
+
     return () => {
-      scroll.destroy();
+      if (scrollRef.current) {
+        scrollRef.current.destroy();
+      }
     };
   }, []);
 
-  const scrollToTop = () => {
-    const sectionSelector = document.getElementById("top");
-    scrollRef.current.scrollTo(sectionSelector, {
-      duration: 4,
-      disableLerp: false,
-    });
+  const scrollToAnchor = (anchorId) => {
+    const sectionSelector = document.getElementById(`${anchorId}`);
+    
+    if (sectionSelector &&scrollRef.current) {
+      scrollRef.current.scrollTo(sectionSelector, {
+            duration: 5,
+            disableLerp: false,
+          });
+    } else {
+      console.log('error scrolling to anchor')
+    }
   };
 
   return (
-    <>
+    <div id={"scroll-container"}>
       <div ref={header} id={"top"} className={styles.header}>
         <div className={styles.logoContainer}>
           <Magnetic>
@@ -70,46 +80,45 @@ export default function index() {
         <div className={styles.navContainer}>
           <div className={styles.nav}>
             <Magnetic>
-              <div className={styles.el}>
-                <a href="#work">About</a>
+              <div onClick={() => scrollToAnchor("work")} className={styles.el}>
+                <p>About</p>
               </div>
             </Magnetic>
             <Magnetic>
-              <div className={styles.el}>
-                <a>Projects</a>
+              <div onClick={() => scrollToAnchor("top")} className={styles.el}>
+                <p>Projects</p>
               </div>
             </Magnetic>
             <Magnetic>
-              <div className={styles.el}>
-                <a>Skills</a>
+              <div onClick={() => scrollToAnchor("top")} className={styles.el}>
+                <p>Skills</p>
               </div>
             </Magnetic>
             <Magnetic>
-              <div className={styles.el}>
-                <a>Contact</a>
+              <div onClick={() => scrollToAnchor("top")} className={styles.el}>
+                <p>Contact</p>
               </div>
             </Magnetic>
           </div>
-            <iframe
-              className={styles.spotify}
-              src={
-                "https://open.spotify.com/embed/track/7hZnAqzJGdz58gS4XxRowB?utm_source=generator"
-              }
-              width={"85%"}
-              height={"80"}
-              frameBorder={"0"}
-              allow={
-                "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              }
-              loading={"lazy"}
-            ></iframe>
-          </div>
+          <iframe
+            className={styles.spotify}
+            src={
+              "https://open.spotify.com/embed/track/7hZnAqzJGdz58gS4XxRowB?utm_source=generator"
+            }
+            width={"85%"}
+            height={"80"}
+            allow={
+              "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            }
+            loading={"lazy"}
+          ></iframe>
+        </div>
       </div>
       <div ref={button} className={styles.headerButtonContainer}>
-        <Rounded onClick={scrollToTop} className={`${styles.button}`}>
+        <Rounded onClick={() => scrollToAnchor("top")} className={`${styles.button}`}>
           <div className={styles.arrow}>↑</div>
         </Rounded>
       </div>
-    </>
+    </div>
   );
 }

@@ -11,6 +11,7 @@ export default function index() {
   const isInView = useInView(description);
   return (
     <main ref={description} className={styles.description}>
+      <div id={"work"} className={styles.anchor}></div>
       <div>
         <div data-scroll data-scroll-speed={0.3}>
           <Magnetic>

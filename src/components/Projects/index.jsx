@@ -10,32 +10,32 @@ const projects = [
   {
     title: "AI-musing",
     src: "https://github.com/fluffyjohnny/AI-musing",
-    description: "ChatGTP powered chatbot",
+    description: "ChatGTP Powered Chatbot",
   },
   {
     title: "PetBnB",
     src: "https://github.com/fluffyjohnny/PetBnB",
-    description: "AirBnB clone for pets",
+    description: "AirBnB Clone for Pets",
   },
   {
     title: "Scheduler",
     src: "https://github.com/fluffyjohnny/Scheduler",
-    description: "Interview booking webapp",
+    description: "Interview Booking Webapp",
   },
   {
     title: "Tweeter",
     src: "https://github.com/fluffyjohnny/tweeter",
-    description: "Twitter clone webapp",
+    description: "Twitter Clone Webapp",
   },
   {
     title: "heymate!",
     src: "https://heymate.ca/",
-    description: "All-in-one business management platform",
+    description: "All-in-One Business Management Platform",
   },
   {
     title: "toStrong()",
     src: "https://github.com/fluffyjohnny/toStrong",
-    description: "Fitness tracking webapp",
+    description: "Fitness Tracking Webapp",
   },
 ];
 
@@ -43,42 +43,42 @@ const web = [
   {
     title: "Calton Developments",
     src: "https://www.caltondevelopments.ca/",
-    description: "Custom home building specialists",
+    description: "Custom Home Building Specialists",
   },
   {
     title: "Fusion Supermarket",
     src: "https://fusionsupermarket.ca/",
-    description: "Asian Supermarket",
+    description: "Beloved Asian Supermarket",
   },
   {
     title: "Grow Car Rental",
     src: "https://growcarrental.ca/",
-    description: "Car rental services",
+    description: "Car Rental Services",
   },
   {
     title: "Handi Grill",
     src: "https://handigrill.com/",
-    description: "A culinary journey",
+    description: "A Indian Culinary Journey",
   },
   {
     title: "Homespro Building",
     src: "https://www.homespros.ca/",
-    description: "High quality flooring supplier",
+    description: "High Quality Flooring Supplier",
   },
   {
     title: "House of Colour",
     src: "https://www.hochairsalon.net/",
-    description: "Boutique hair salon",
+    description: "Boutique Hair Salon",
   },
   {
     title: "Jade Sunrise Law",
     src: "https://www.jadesunriselaw.com/",
-    description: "Law office",
+    description: "Outstanding Law Office",
   },
   {
     title: "Lotus Range Hoods",
     src: "https://www.lotusrangehood.ca/",
-    description: "Kitchen ventilation specialists",
+    description: "Kitchen Ventilation Specialists",
   },
 ];
 

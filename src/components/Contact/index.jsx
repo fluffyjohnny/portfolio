@@ -30,6 +30,7 @@ export default function index() {
               alt={"image"}
               src={`/images/contact.jpeg`}
               sizes={"(max-width: 600px) 50%, 100%"}
+              draggable={"false"}
               priority
             />
           </div>
