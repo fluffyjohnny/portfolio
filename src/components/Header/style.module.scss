@@ -1,0 +1,64 @@
+.header {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  top: 0;
+  color: white;
+  padding: 35px;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 300;
+  box-sizing: border-box;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    margin-left: 5vw;
+    cursor: pointer;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+
+    .el {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+      padding: 15px;
+      cursor: pointer;
+    }
+    a {
+      cursor: pointer;
+    }
+  }
+}
+.headerButtonContainer {
+  transform: scale(0);
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 4;
+
+  .button {
+    position: relative;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #283618;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow {
+    margin-top: 4px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 10;
+  }
+}

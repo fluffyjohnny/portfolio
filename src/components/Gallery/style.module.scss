@@ -1,0 +1,73 @@
+.gallery {
+  height: 120vh;
+  background: #ccc5b9;
+  position: relative;
+  border-radius: 50%;
+
+  .topArc,
+  .bottomArc {
+    position: absolute;
+    width: 100%;
+    height: inherit; /* Adjust height as needed */
+    background-color: #ccc5b9; 
+  }
+
+  .topArc {
+    top: -2.5rem;
+    border-top-right-radius: 50% 4%;
+    border-top-left-radius: 50% 4%;
+  }
+
+  .bottomArc {
+    bottom: -2.5rem;
+    border-bottom-right-radius: 50% 2%;
+    border-bottom-left-radius: 50% 2%;
+  }
+
+  .galleryContainer {
+    height: inherit;
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    padding: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-top-right-radius: 50% 5%;
+    border-top-left-radius: 50% 5%;
+    border-bottom-right-radius: 50% 5%;
+    border-bottom-left-radius: 50% 5%;
+    z-index: 10;
+
+    .column {
+      position: relative;
+      height: 150%;
+      width: 25%;
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+      .imageContainer {
+        height: 150%;
+        width: 100%;
+        position: relative;
+        border-radius: 1vw;
+        overflow: hidden;
+        img {
+          object-fit: cover;
+        }
+      }
+      &:nth-of-type(1) {
+        top: -45%;
+      }
+      &:nth-of-type(2) {
+        top: -95%;
+      }
+      &:nth-of-type(3) {
+        top: -45%;
+      }
+      &:nth-of-type(4) {
+        top: -75%;
+      }
+    }
+  }
+}
