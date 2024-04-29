@@ -15,6 +15,8 @@
     display: flex;
     margin-left: 5vw;
     cursor: pointer;
+    max-width: 100%;
+    height: auto;
   }
   .nav {
     display: flex;
@@ -51,6 +53,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
+    user-select: none;
   }
 
   .arrow {

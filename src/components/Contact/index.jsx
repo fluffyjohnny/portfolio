@@ -20,7 +20,7 @@ export default function index() {
         <div className={styles.title}>
           <span>
             <div className={styles.imageContainer}>
-              <Image fill={true} alt={"image"} src={`/images/background.jpg`} />
+              <Image fill={true} alt={"image"} src={`/images/background.jpg`} sizes={"(max-width: 600px) 50vw, 100vw"} priority />
             </div>
             <h2>Let's work</h2>
           </span>

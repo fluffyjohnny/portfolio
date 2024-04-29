@@ -47,8 +47,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main ref={gallery} className={styles.main}>
-      <div className={styles.gallery}>
+    <main>
+      <div ref={gallery} className={styles.gallery}>
         <div className={styles.topArc}></div>
         <div className={styles.galleryContainer}>
           <Column images={[images[0], images[1], images[2]]} y={y} />
@@ -68,7 +68,7 @@ const Column = ({ images, y }) => {
       {images.map((src, i) => {
         return (
           <div key={i} className={styles.imageContainer}>
-            <Image src={`/images/${src}`} alt="image" fill />
+            <Image src={`/images/${src}`} alt={"project"} fill sizes={"(max-width: 600px) 50%, 100%"} priority />
           </div>
         );
       })}

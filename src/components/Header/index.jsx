@@ -14,7 +14,6 @@ export default function index() {
   const scrollRef = useRef(null);
 
   useLayoutEffect(() => {
-    console.log(window.innerHeight, document.documentElement, window);
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(button.current, {
       scrollTrigger: {
@@ -22,7 +21,6 @@ export default function index() {
         start: 0,
         end: window.innerHeight,
         onLeave: () => {
-          console.log(window.innerHeight);
           gsap.to(button.current, {
             scale: 1,
             duration: 0.25,
@@ -30,7 +28,6 @@ export default function index() {
           });
         },
         onEnterBack: () => {
-          console.log(window.innerHeight);
           gsap.to(button.current, {
             scale: 0,
             duration: 0.25,
@@ -57,9 +54,9 @@ export default function index() {
 
   return (
     <>
-      <div ref={header} id="top" className={styles.header}>
+      <div ref={header} id={"top"} className={styles.header}>
         <div className={styles.logo}>
-          <Image src="/images/logo.png" width="90" height="90" alt="logo" />
+          <Image src={"/images/logo.png"} width={"90"} height={"90"} className={styles.logo} alt={"logo"} />
         </div>
         <div className={styles.nav}>
           <Magnetic>
