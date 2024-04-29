@@ -6,38 +6,38 @@ import Image from 'next/image';
 const slider1 = [
     {
         color: "#e3e5e7",
-        src: "5.png"
+        src: "c2.jpg"
     },
     {
         color: "#d6d7dc",
-        src: "6.png"
+        src: "decimal.jpg"
     },
     {
         color: "#e3e3e3",
-        src: "7.png"
+        src: "funny.jpg"
     },
     {
         color: "#21242b",
-        src: "8.png"
+        src: "google.jpg"
     }
 ]
 
 const slider2 = [
     {
         color: "#d4e3ec",
-        src: "9.png"
+        src: "maven.jpg"
     },
     {
         color: "#e5e0e1",
-        src: "10.jpg"
+        src: "panda.jpg"
     },
     {
         color: "#d7d4cf",
-        src: "11.png"
+        src: "powell.jpg"
     },
     {
         color: "#e1dad6",
-        src: "12.jpg"
+        src: "wix.jpg"
     }
 ]
 
@@ -55,6 +55,7 @@ export default function index() {
 
     return (
         <div ref={container} className={styles.slidingImages}>
+            <div className={styles.slidingImagesContainer}>
             <motion.div style={{x: x1}} className={styles.slider}>
                     {
                         slider1.map( (project, index) => {
@@ -83,6 +84,7 @@ export default function index() {
                         })
                     }
                 </motion.div>
+            </div>
                 <motion.div style={{height}} className={styles.circleContainer}>
                     <div className={styles.circle}></div>
                 </motion.div>

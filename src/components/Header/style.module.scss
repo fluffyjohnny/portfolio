@@ -10,12 +10,15 @@
   font-weight: 300;
   box-sizing: border-box;
   align-items: center;
-
-  .logo {
-    margin-left: 5vw;
-    cursor: pointer;
-    max-width: 100%;
+  .logoContainer{
+    width: 90px;
     height: auto;
+    .logo {
+      margin-left: 5vw;
+      cursor: pointer;
+      height: auto;
+      max-width: 100%;
+    }
   }
   .nav {
     display: flex;

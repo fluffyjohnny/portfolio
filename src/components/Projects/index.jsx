@@ -149,7 +149,7 @@ export default function Home() {
       <div className={styles.body}>
         <div className={styles.container}>
           <Magnetic>
-            <h1>Projects</h1>
+            <h1>Projects  ⌨️</h1>
           </Magnetic>
           <div className={styles.projectContainer}>
             {projects.map((project, index) => {
@@ -168,7 +168,7 @@ export default function Home() {
         </div>
         <div className={styles.container}>
           <Magnetic>
-            <h1>Web & Design</h1>
+            <h1>Web & Design  🖥️</h1>
           </Magnetic>
           <div className={styles.projectContainer}>
             {web.map((project, index) => {
@@ -201,7 +201,7 @@ export default function Home() {
           initial="initial"
           animate={active ? "enter" : "closed"}
         >
-          View
+          View.
         </motion.div>
       </>
     </main>
