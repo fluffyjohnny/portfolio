@@ -9,7 +9,7 @@
     position: absolute;
     width: 100%;
     height: inherit;
-    background-color: #ccc5b9; 
+    background-color: #ccc5b9;
   }
 
   .topArc {
@@ -20,13 +20,12 @@
 
   .bottomArc {
     bottom: -2.5rem;
-    border-bottom-right-radius: 50% 2%;
-    border-bottom-left-radius: 50% 2%;
   }
 
   .galleryContainer {
     position: relative;
     display: flex;
+    justify-content: center;
     box-sizing: border-box;
     height: inherit;
     gap: 2vw;
@@ -36,6 +35,7 @@
     border-top-left-radius: 50% 5%;
     border-bottom-right-radius: 50% 5%;
     border-bottom-left-radius: 50% 5%;
+    border: 10px solid #d6ccc2;
     z-index: 1;
 
     .column {
@@ -52,6 +52,7 @@
         position: relative;
         border-radius: 1vw;
         overflow: hidden;
+        box-shadow: -9px 6px 19px -1px rgba(0, 0, 0, 0.5);
         img {
           object-fit: cover;
         }

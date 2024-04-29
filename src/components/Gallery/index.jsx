@@ -5,18 +5,18 @@ import Image from "next/image";
 import { useTransform, useScroll, motion } from "framer-motion";
 
 const images = [
-  "grow.png",
-  "heymate-m.png",
-  "handigrill.png",
-  "11.png",
+  "toStrong.png",
   "hoc.png",
-  "lotus.png",
-  "jade.png",
   "homespro.png",
-  "fusion.png",
+  "ai-musing.png",
+  "heymate-m.png",
+  "tweeter.png",
   "maxmerge.png",
+  "petbnb.png",
+  "fusion.png",
+  "scheduler.png",
   "calton.png",
-  "12.jpg",
+  "jade.png",
 ];
 
 export default function Home() {
@@ -68,7 +68,7 @@ const Column = ({ images, y }) => {
       {images.map((src, i) => {
         return (
           <div key={i} className={styles.imageContainer}>
-            <Image src={`/images/${src}`} alt={"project"} fill sizes={"(max-width: 600px) 50%, 100%"} priority />
+            <Image src={`/images/${src}`} alt={"project"} fill sizes={"(max-width: 600px) 80%, 100%"} priority />
           </div>
         );
       })}
