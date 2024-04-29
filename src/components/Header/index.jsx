@@ -56,13 +56,16 @@ export default function index() {
     <>
       <div ref={header} id={"top"} className={styles.header}>
         <div className={styles.logoContainer}>
-        <Image
-          src={"/images/logo.png"}
-          width={"60"}
-          height={"60"}
-          className={styles.logo}
-          alt={"logo"}
-        />
+          <Magnetic>
+            <Image
+              src={"/images/logo.png"}
+              width={"60"}
+              height={"60"}
+              className={styles.logo}
+              alt={"logo"}
+              draggable={"false"}
+            />
+          </Magnetic>
         </div>
         <div className={styles.nav}>
           <Magnetic>
@@ -73,6 +76,11 @@ export default function index() {
           <Magnetic>
             <div className={styles.el}>
               <a>Projects</a>
+            </div>
+          </Magnetic>
+          <Magnetic>
+            <div className={styles.el}>
+              <a>Skills</a>
             </div>
           </Magnetic>
           <Magnetic>

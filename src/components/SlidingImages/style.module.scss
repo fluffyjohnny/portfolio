@@ -11,21 +11,27 @@
     .slider {
       display: flex;
       position: relative;
-      gap: 3vw;
-      width: 120vw;
+      gap: 2vw;
+      width: 110vw;
       left: -10vw;
-      .project {
-        width: 25%;
-        height: 20vw;
+      margin: 2rem 0;
+      .icon {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-grow: 1;
+        width: 10rem;
+        height: 10rem;
+        min-width: 8.75rem;
+        border-radius: 1vw;
         .imageContainer {
           position: relative;
-          width: 80%;
-          height: 80%;
+          width: 60%;
+          height: 60%;
+          user-select: none;
           img {
-            object-fit: cover;
+            object-fit: fill;
+            object-position: center;
           }
         }
       }
@@ -36,7 +42,7 @@
     margin-top: 10%;
 
     .circle {
-      height: 1550%;
+      height: 1000%;
       width: 100%;
       border-radius: 0 0 50% 50%;
       background-color: #ccc5b9;

@@ -27,6 +27,7 @@
       font-size: 160px;
       font-weight: 500;
       padding: 50px 50px 30px;
+      user-select: none;
     }
     
     .slider p:nth-of-type(2){
@@ -45,6 +46,7 @@
       p{
         margin: 0px;
         margin-bottom: 10px;
+        user-select: none;
       }
       svg{
         transform: scale(2.5);

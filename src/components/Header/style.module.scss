@@ -18,6 +18,7 @@
       cursor: pointer;
       height: auto;
       max-width: 100%;
+      user-select: none;
     }
   }
   .nav {
@@ -31,6 +32,7 @@
       z-index: 1;
       padding: 15px;
       cursor: pointer;
+      user-select: none;
     }
     a {
       cursor: pointer;
