@@ -144,6 +144,7 @@ export default function Home() {
       onMouseMove={(e) => {
         moveItems(e.clientX, e.clientY);
       }}
+      id={"projects"}
       className={styles.projects}
     >
       <div className={styles.body}>

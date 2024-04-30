@@ -85,17 +85,17 @@ export default function index() {
               </div>
             </Magnetic>
             <Magnetic>
-              <div onClick={() => scrollToAnchor("top")} className={styles.el}>
+              <div onClick={() => scrollToAnchor("projects")} className={styles.el}>
                 <p>Projects</p>
               </div>
             </Magnetic>
             <Magnetic>
-              <div onClick={() => scrollToAnchor("top")} className={styles.el}>
+              <div onClick={() => scrollToAnchor("skills")} className={styles.el}>
                 <p>Skills</p>
               </div>
             </Magnetic>
             <Magnetic>
-              <div onClick={() => scrollToAnchor("top")} className={styles.el}>
+              <div onClick={() => scrollToAnchor("contact")} className={styles.el}>
                 <p>Contact</p>
               </div>
             </Magnetic>

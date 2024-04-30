@@ -121,7 +121,7 @@ export default function index() {
   const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
 
   return (
-    <div ref={container} className={styles.slidingImages}>
+    <div ref={container} id={"skills"} className={styles.slidingImages}>
       <div className={styles.slidingImagesContainer}>
         <motion.div style={{ x: x1 }} className={styles.slider}>
           {slider1.map((project, index) => {
@@ -136,7 +136,7 @@ export default function index() {
                     fill={true}
                     alt={"image"}
                     src={project.src}
-                    sizes={"(max-width: 600px) 50%, 100%"}
+                    sizes={"(max-width: 640px) 80%, 100%"}
                     draggable={"false"}
                     priority
                   />
@@ -158,7 +158,7 @@ export default function index() {
                     fill={true}
                     alt={"image"}
                     src={project.src}
-                    sizes={"(max-width: 600px) 50%, 100%"}
+                    sizes={"(max-width: 640px) 80%, 100%"}
                     draggable={"false"}
                     priority
                   />
@@ -180,7 +180,7 @@ export default function index() {
                     fill={true}
                     alt={"image"}
                     src={project.src}
-                    sizes={"(max-width: 600px) 50%, 100%"}
+                    sizes={"(max-width: 640px) 80%, 100%"}
                     draggable={"false"}
                     priority
                   />

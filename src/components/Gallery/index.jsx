@@ -72,7 +72,7 @@ const Column = ({ images, y }) => {
               src={`/images/${src}`}
               alt={"project"}
               fill
-              sizes={"(max-width: 600px) 80%, 100%"}
+              sizes={"(max-width: 640px) 80%, 100%"}
               draggable={"false"}
               priority
             />

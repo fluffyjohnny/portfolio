@@ -29,7 +29,7 @@ export default function index() {
               fill={true}
               alt={"image"}
               src={`/images/contact.jpeg`}
-              sizes={"(max-width: 600px) 50%, 100%"}
+              sizes={"(max-width: 640px) 80%, 100%"}
               draggable={"false"}
               priority
             />
@@ -40,7 +40,7 @@ export default function index() {
             </Rounded>
           </motion.div>
         </div>
-        <div className={styles.nav}>
+        <div id={"contact"} className={styles.nav}>
           <div className={styles.navBtns}>
             <a href={"mailto:john.chia0106@gmail.com"} type={"email"}>
               <Rounded>
