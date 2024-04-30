@@ -3,8 +3,8 @@ import { useRef } from "react";
 import { slideUp, opacity } from "./animation";
 import { useInView, motion } from "framer-motion";
 import Image from "next/image";
-import Magnetic from "../../common/Magnetic/Index";
-export default function index() {
+import Magnetic from "../../common/Magnetic";
+export default function Index() {
   const phrase =
     "A Full-Stack Developer who transitioned from Veterinary Science has always had a passion for technology and software. Due to COVID-19, he decided to take a leap of faith and make a career change...";
   const description = useRef(null);

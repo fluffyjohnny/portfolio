@@ -3,9 +3,9 @@ import Image from "next/image";
 import Rounded from "../../common/RoundedButton";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
-import Magnetic from "../../common/Magnetic/Index";
+import Magnetic from "../../common/Magnetic";
 
-export default function index() {
+export default function Index() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -22,7 +22,7 @@ export default function index() {
             <h2>
               and <b>so are you!</b>
             </h2>
-            <h2>Let's work together.</h2>
+            <h2>Let&aposs work together.</h2>
           </span>
           <div className={styles.imageContainer}>
             <Image
