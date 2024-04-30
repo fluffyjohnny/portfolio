@@ -22,7 +22,7 @@ export default function Index() {
             <h2>
               and <b>so are you!</b>
             </h2>
-            <h2>Let&aposs work together.</h2>
+            <h2>Let&apos;s work together.</h2>
           </span>
           <div className={styles.imageContainer}>
             <Image
