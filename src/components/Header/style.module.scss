@@ -6,10 +6,10 @@
   color: white;
   padding: 35px;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   font-weight: 300;
   box-sizing: border-box;
-  align-items: flex-start;
 
   .logoContainer {
     width: 90px;
@@ -34,11 +34,13 @@
     .nav {
       display: flex;
       align-items: center;
-
+      width: fit-content;
       .el {
         display: flex;
         flex-direction: column;
         position: relative;
+        align-items: center;
+        min-width: 90px;
         z-index: 1;
         padding: 15px;
         cursor: pointer;
@@ -46,6 +48,16 @@
       }
       a {
         cursor: pointer;
+      }
+    }
+
+    @media only screen and (max-width: 640px) {
+      .spotify {
+        display: none;
+      }
+      .el {
+        padding: 5px !important;
+        min-width: 0 !important;
       }
     }
   }

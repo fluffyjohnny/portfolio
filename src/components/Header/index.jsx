@@ -51,14 +51,14 @@ export default function index() {
 
   const scrollToAnchor = (anchorId) => {
     const sectionSelector = document.getElementById(`${anchorId}`);
-    
-    if (sectionSelector &&scrollRef.current) {
+
+    if (sectionSelector && scrollRef.current) {
       scrollRef.current.scrollTo(sectionSelector, {
-            duration: 5,
-            disableLerp: false,
-          });
+        duration: 5,
+        disableLerp: false,
+      });
     } else {
-      console.log('error scrolling to anchor')
+      console.log("error scrolling to anchor");
     }
   };
 
@@ -85,17 +85,26 @@ export default function index() {
               </div>
             </Magnetic>
             <Magnetic>
-              <div onClick={() => scrollToAnchor("projects")} className={styles.el}>
+              <div
+                onClick={() => scrollToAnchor("projects")}
+                className={styles.el}
+              >
                 <p>Projects</p>
               </div>
             </Magnetic>
             <Magnetic>
-              <div onClick={() => scrollToAnchor("skills")} className={styles.el}>
+              <div
+                onClick={() => scrollToAnchor("skills")}
+                className={styles.el}
+              >
                 <p>Skills</p>
               </div>
             </Magnetic>
             <Magnetic>
-              <div onClick={() => scrollToAnchor("contact")} className={styles.el}>
+              <div
+                onClick={() => scrollToAnchor("contact")}
+                className={styles.el}
+              >
                 <p>Contact</p>
               </div>
             </Magnetic>
@@ -115,7 +124,10 @@ export default function index() {
         </div>
       </div>
       <div ref={button} className={styles.headerButtonContainer}>
-        <Rounded onClick={() => scrollToAnchor("top")} className={`${styles.button}`}>
+        <Rounded
+          onClick={() => scrollToAnchor("top")}
+          className={`${styles.button}`}
+        >
           <div className={styles.arrow}>↑</div>
         </Rounded>
       </div>

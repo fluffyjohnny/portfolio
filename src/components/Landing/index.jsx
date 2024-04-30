@@ -53,6 +53,7 @@ export default function Home() {
         src="/images/background.jpg"
         fill={true}
         alt="background"
+        sizes={"(max-width: 640px) 80%, 100%"}
         draggable="false"
         priority
       />

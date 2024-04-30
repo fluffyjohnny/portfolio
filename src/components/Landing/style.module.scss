@@ -11,7 +11,7 @@
 
   .sliderContainer {
     position: absolute;
-    top: calc(100vh - 350px);
+    top: calc(100vh - 320px);
     // transform: rotate(7deg);
   }
 
@@ -38,10 +38,8 @@
 
   .description {
     position: absolute;
-    top: 35%;
-    left: 60%;
     color: white;
-    font-size: 2.5rem;
+    margin: 0 1.5rem;
     font-weight: 300;
     p {
       margin: 0px;
@@ -54,7 +52,18 @@
     }
   }
 
-  .spotify {
-    position: relative;
+  @media only screen and (max-width: 640px) {
+    .description {
+      top: 30%;
+      left: 50%;
+      font-size: 1.5rem;
+    }
+  }
+  @media only screen and (min-width: 641px) {
+    .description {
+      top: 35%;
+      left: 55%;
+      font-size: 2.3rem;
+    }
   }
 }
