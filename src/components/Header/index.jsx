@@ -5,8 +5,8 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Rounded from "../../common/RoundedButton";
-import Magnetic from "../../common/Magnetic";
+import Rounded from "../../common/RoundedButton/Index";
+import Magnetic from "../../common/Magnetic/Index";
 
 export default function index() {
   const header = useRef(null);

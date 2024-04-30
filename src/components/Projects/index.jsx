@@ -1,9 +1,9 @@
 "use client";
 import styles from "./style.module.scss";
 import { useState, useEffect, useRef } from "react";
-import Project from "./components/project";
+import Project from "./components/project/Index";
 import { motion } from "framer-motion";
-import Magnetic from "../../common/Magnetic";
+import Magnetic from "../../common/Magnetic/Index";
 import gsap from "gsap";
 
 const projects = [
