@@ -3,13 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-basis: auto;
   text-align: center;
   cursor: pointer;
   flex-grow: 1;
   gap: 1rem;
-  width: 23%;
-  min-width: 16.375rem;
-  min-height: 17.5rem;
   padding: 1.875rem;
   border-radius: 1vw;
   background-color: #f5f1ed;
@@ -19,7 +17,6 @@
   user-select: none;
 
   h2 {
-    font-size: 30px;
     margin: 0px;
     font-weight: 500;
     transition: all 0.4s;
@@ -48,5 +45,27 @@
   &:active {
     position: relative;
     top: 2px;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .project {
+    width: 23%;
+    min-width: 15.8rem;
+    max-width: 50%;
+    min-height: 15.5rem;
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .project {
+    width: 23%;
+    min-width: 12.5rem;
+    min-height: 14.5rem;
+    h2 {
+      font-size: 28px;
+    }
   }
 }

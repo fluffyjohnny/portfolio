@@ -35,7 +35,6 @@
     }
   }
   .leaf2 {
-    top: 100%;
     right: -5%;
     width: 130px;
     height: 150px;
@@ -58,15 +57,13 @@
   }
 
   .branch {
-    position: relative;
-    width: 40vw;
-    height: auto;
-    max-width: 70%;
+    display: none;
   }
 
   .body {
     max-width: 1300px;
     display: flex;
+    flex-wrap: wrap;
     gap: 5rem;
     position: relative;
     p {
@@ -94,6 +91,27 @@
         width: 90%;
         font-weight: 300;
       }
+    }
+  }
+
+  @media only screen and (min-width: 641px) {
+    .branch {
+      display: block;
+      position: relative;
+      width: 40vw;
+      height: auto;
+      max-width: 70%;
+    }
+    .leaf2 {
+      top: 100%;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .body {
+      margin-bottom: 15%;
+    }
+    .leaf2 {
+      bottom: -60%;
     }
   }
 }

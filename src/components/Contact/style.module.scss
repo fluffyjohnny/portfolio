@@ -26,22 +26,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-        h2 {
-          font-size: 2.5rem;
-          user-select: none;
-
-          b {
-            font-weight: 700;
-          }
-        }
       }
       .imageContainer {
         display: flex;
         position: relative;
         justify-content: center;
-        width: 250px;
-        height: 350px;
         border-radius: 50%;
         overflow: hidden;
         padding-top: 10px;
@@ -56,14 +45,9 @@
         margin: 0px;
         font-weight: 300;
       }
-      .buttonContainer {
-        position: absolute;
-        left: 30%;
-        bottom: 20%;
-      }
       .button {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
         background-color: #344e41;
         color: white;
         border-radius: 50%;
@@ -114,6 +98,49 @@
             min-width: 40px;
           }
         }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 641px) {
+    .title {
+      gap: 2rem;
+    }
+    .buttonContainer {
+      position: absolute;
+      left: 30%;
+      bottom: 20%;
+    }
+    .imageContainer {
+      width: 300px;
+      height: 380px;
+    }
+    h2 {
+      font-size: 2.5rem;
+      user-select: none;
+
+      b {
+        font-weight: 700;
+      }
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .title {
+      gap: 0.5rem;
+    }
+    .buttonContainer {
+      display: none;
+    }
+    .imageContainer {
+      width: 230px;
+      height: 250px;
+    }
+    h2 {
+      font-size: 1.5rem;
+      user-select: none;
+
+      b {
+        font-weight: 700;
       }
     }
   }
