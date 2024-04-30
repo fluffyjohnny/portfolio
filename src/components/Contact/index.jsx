@@ -49,7 +49,7 @@ export default function Index() {
             </a>
             <a href={"tel:2368666029"} type={"phone"}>
               <Rounded>
-                <p>+2368666029</p>
+                <p>+1 236 866 6029</p>
               </Rounded>
             </a>
           </div>

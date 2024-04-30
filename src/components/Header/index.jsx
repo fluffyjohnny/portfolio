@@ -1,6 +1,5 @@
 "use client";
 import { useLayoutEffect, useRef } from "react";
-import LocomotiveScroll from "locomotive-scroll";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import gsap from "gsap";
@@ -37,10 +36,14 @@ export default function Index() {
       },
     });
 
-    scrollRef.current = new LocomotiveScroll({
-      el: document.querySelector("#scroll-container"),
-      smooth: true,
-    });
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+
+      scrollRef.current = new LocomotiveScroll({
+        el: document.querySelector("#scroll-container"),
+        smooth: true,
+      });
+    })();
 
     return () => {
       if (scrollRef.current) {
