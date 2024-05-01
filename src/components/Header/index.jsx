@@ -71,7 +71,7 @@ export default function Index() {
         <div className={styles.logoContainer}>
           <Magnetic>
             <Image
-              src={"/images/logo.png"}
+              src={"https://github.com/fluffyjohnny/portfolio/blob/main/public/images/logo.png?raw=true"}
               width={"60"}
               height={"60"}
               className={styles.logo}

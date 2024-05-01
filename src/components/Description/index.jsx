@@ -49,8 +49,9 @@ export default function Index() {
             <div className={styles.leaf2}></div>
           </Magnetic>
         </div>
+        <div className={styles.border}></div>
         <Image
-          src="/images/branch.png"
+          src="https://github.com/fluffyjohnny/portfolio/blob/main/public/images/branch.png?raw=true"
           width="1000"
           height="1000"
           alt="branch"

@@ -71,7 +71,6 @@
       justify-content: space-between;
       flex-wrap: wrap;
       width: 100%;
-      padding: 5% 10%;
       gap: 20px;
 
       .navBtns {
@@ -123,6 +122,9 @@
         font-weight: 700;
       }
     }
+    .nav {
+      padding: 10% 10%;
+    }
   }
   @media only screen and (max-width: 640px) {
     .title {
@@ -142,6 +144,9 @@
       b {
         font-weight: 700;
       }
+    }
+    .nav {
+      padding: 5% 10%;
     }
   }
 }

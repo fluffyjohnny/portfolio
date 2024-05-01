@@ -50,7 +50,7 @@ export default function Home() {
       className={styles.landing}
     >
       <Image
-        src="/images/background.jpg"
+        src="https://github.com/fluffyjohnny/portfolio/blob/main/public/images/background.jpg?raw=true"
         fill={true}
         alt="background"
         sizes={"(max-width: 640px) 80%, 100%"}

@@ -28,7 +28,7 @@ export default function Index() {
             <Image
               fill={true}
               alt={"image"}
-              src={`/images/contact.jpeg`}
+              src={`https://github.com/fluffyjohnny/portfolio/blob/main/public/images/contact.jpeg?raw=true`}
               sizes={"(max-width: 640px) 80%, 100%"}
               draggable={"false"}
               priority
@@ -54,7 +54,7 @@ export default function Index() {
             </a>
           </div>
           <div className={styles.socials}>
-            <h2>Socials</h2>
+            <h3>Socials</h3>
             <div className={styles.iconContainer}>
               <Magnetic>
                 <a

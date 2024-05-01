@@ -69,7 +69,7 @@ const Column = ({ images, y }) => {
         return (
           <div key={i} className={styles.imageContainer}>
             <Image
-              src={`/images/${src}`}
+              src={`https://github.com/fluffyjohnny/portfolio/blob/main/public/images/${src}?raw=true`}
               alt={"project"}
               fill
               sizes={"(max-width: 640px) 80%, 100%"}
