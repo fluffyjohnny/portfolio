@@ -21,6 +21,9 @@ To run this portfolio locally, follow these steps:
 4. Start the development server using npm run dev.
 5. Open your web browser and navigate to http://localhost:3000.
 
+## Demo 
+![demo](https://github.com/fluffyjohnny/portfolio/blob/main/demo.gif?raw=true)
+
 ## Technologies Used
 - React.js
 - framer motion 

@@ -4,7 +4,6 @@
   z-index: 1;
   top: 0;
   color: white;
-  padding: 35px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -49,20 +48,6 @@
         cursor: pointer;
       }
     }
-    @media only screen and (min-width: 641px) {
-      .logo {
-        margin-left: 4vw;
-      }
-    }
-    @media only screen and (max-width: 640px) {
-      .spotify {
-        display: none;
-      }
-      .el {
-        padding: 5px !important;
-        min-width: 0 !important;
-      }
-    }
   }
 }
 .headerButtonContainer {
@@ -71,7 +56,6 @@
   right: 2%;
   bottom: 2%;
   z-index: 4;
-
   .button {
     position: relative;
     margin: 20px;
@@ -86,7 +70,6 @@
     z-index: 999;
     user-select: none;
   }
-
   .arrow {
     margin-top: 4px;
     text-align: center;
@@ -94,5 +77,26 @@
     font-size: 32px;
     cursor: pointer;
     z-index: 10;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .header {
+    padding: 35px;
+    .logo {
+      margin-left: 4vw;
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .header {
+    padding: 35px 10px;
+    .spotify {
+      display: none;
+    }
+    .el {
+      padding: 5px !important;
+      min-width: 0 !important;
+    }
   }
 }

@@ -19,27 +19,30 @@ export default function Index() {
           </Magnetic>
         </div>
         <div className={styles.body}>
-          <p>
-            {phrase.split(" ").map((word, index) => {
-              return (
-                <span key={index} className={styles.mask}>
-                  <motion.span
-                    variants={slideUp}
-                    custom={index}
-                    animate={isInView ? "open" : "closed"}
-                    key={index}
-                  >
-                    {word}
-                  </motion.span>
-                </span>
-              );
-            })}
-          </p>
+          <div className={styles.bodyContainer}>
+            <p>
+              {phrase.split(" ").map((word, index) => {
+                return (
+                  <span key={index} className={styles.mask}>
+                    <motion.span
+                      variants={slideUp}
+                      custom={index}
+                      animate={isInView ? "open" : "closed"}
+                      key={index}
+                    >
+                      {word}
+                    </motion.span>
+                  </span>
+                );
+              })}
+            </p>
 
-          <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>
-            Learning how to be comfortable outside of my comfort zone, tackling
-            one challenge at a time, and celebrating each small victory!
-          </motion.p>
+            <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>
+              Learning how to be comfortable outside of my comfort zone,
+              tackling one challenge at a time, and celebrating each small
+              victory!
+            </motion.p>
+          </div>
         </div>
         <div data-scroll data-scroll-speed={0.1}>
           <Magnetic>
