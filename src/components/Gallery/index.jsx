@@ -50,14 +50,10 @@ export default function Home() {
       <div ref={gallery} className={styles.gallery}>
         <div className={styles.topArc}></div>
         <div className={styles.galleryContainer}>
-          <div className={styles.outerColumn}>
-            <Column images={[images[0], images[1], images[2]]} y={y} />
-          </div>
-          <Column images={[images[3], images[4], images[5]]} y={y2} />
-          <Column images={[images[6], images[7], images[8]]} y={y3} />
-          <div className={styles.outerColumn}>
-            <Column images={[images[9], images[10], images[11]]} y={y4} />
-          </div>
+          <Column images={[images[0], images[1], images[2]]} y={y} outer={true}/>
+          <Column images={[images[3], images[4], images[5]]} y={y2} outer={false}/>
+          <Column images={[images[6], images[7], images[8]]} y={y3} outer={false}/>
+          <Column images={[images[9], images[10], images[11]]} y={y4} outer={true}/>
         </div>
         <div className={styles.bottomArc}></div>
       </div>
@@ -65,9 +61,9 @@ export default function Home() {
   );
 }
 
-const Column = ({ images, y }) => {
+const Column = ({ images, y, outer }) => {
   return (
-    <motion.div className={styles.column} style={{ y }}>
+    <motion.div className={`${styles.column} ${outer ? styles.outer : ""}`} style={{ y }}>
       {images.map((src, i) => {
         return (
           <div key={i} className={styles.imageContainer}>
