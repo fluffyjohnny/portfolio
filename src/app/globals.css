@@ -19,7 +19,7 @@
 body {
   color: #132a13;
   background: #f5f1ed;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @layer utilities {

@@ -18,8 +18,7 @@
     "npm": "^10.5.2",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.75.0",
-    "sharp": "^0.33.3"
+    "sass": "^1.75.0"
   },
   "devDependencies": {
     "@types/locomotive-scroll": "^4.1.3",

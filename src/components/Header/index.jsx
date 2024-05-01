@@ -1,7 +1,6 @@
 "use client";
 import { useLayoutEffect, useRef } from "react";
 import styles from "./style.module.scss";
-import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Rounded from "../../common/RoundedButton";
@@ -70,7 +69,7 @@ export default function Index() {
       <div ref={header} id={"top"} className={styles.header}>
         <div className={styles.logoContainer}>
           <Magnetic>
-            <Image
+            <img
               src={"https://github.com/fluffyjohnny/portfolio/blob/main/public/images/logo.png?raw=true"}
               width={"60"}
               height={"60"}

@@ -8,7 +8,7 @@
   position: relative;
   .body {
     position: relative;
-    padding-top: 30%;
+    padding-top: 25%;
     width: 100%;
     max-width: 1800px;
     min-height: 80vh;
@@ -34,15 +34,16 @@
         justify-content: center;
         border-radius: 50%;
         overflow: hidden;
-        padding-top: 10px;
+        margin-top: 10px;
 
         img {
+          height: 100%;
+          width: 100%;
           object-fit: cover;
           object-position: center;
         }
       }
       h2 {
-        font-size: 5vw;
         margin: 0px;
         font-weight: 300;
       }
@@ -117,7 +118,7 @@
       height: 380px;
     }
     h2 {
-      font-size: 2.5rem;
+      font-size: calc(1.5rem + 1vw);
       user-select: none;
 
       b {
@@ -140,7 +141,7 @@
       height: 250px;
     }
     h2 {
-      font-size: 1.5rem;
+      font-size: calc(1rem + 0.5vw);
       user-select: none;
 
       b {

@@ -2,7 +2,6 @@ import styles from "./style.module.scss";
 import { useRef } from "react";
 import { slideUp, opacity } from "./animation";
 import { useInView, motion } from "framer-motion";
-import Image from "next/image";
 import Magnetic from "../../common/Magnetic";
 export default function Index() {
   const phrase =
@@ -50,14 +49,13 @@ export default function Index() {
           </Magnetic>
         </div>
         <div className={styles.border}></div>
-        <Image
+        <img
           src={"https://github.com/fluffyjohnny/portfolio/blob/main/public/images/branch.png?raw=true"}
           width={"1000"}
           height={"1000"}
           alt={"branch"}
           className={styles.branch}
           draggable={"false"}
-          priority
         />
       </div>
     </main>

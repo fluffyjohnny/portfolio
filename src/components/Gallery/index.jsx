@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import styles from "./style.module.scss";
-import Image from "next/image";
 import { useTransform, useScroll, motion } from "framer-motion";
 
 const images = [
@@ -68,13 +67,10 @@ const Column = ({ images, y }) => {
       {images.map((src, i) => {
         return (
           <div key={i} className={styles.imageContainer}>
-            <Image
+            <img
               src={`https://github.com/fluffyjohnny/portfolio/blob/main/public/images/${src}?raw=true`}
               alt={"project"}
-              fill
-              sizes={"(max-width: 640px) 80%, 100%"}
               draggable={"false"}
-              priority
             />
           </div>
         );

@@ -1,5 +1,4 @@
 import styles from "./style.module.scss";
-import Image from "next/image";
 import Rounded from "../../common/RoundedButton";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
@@ -25,13 +24,10 @@ export default function Index() {
             <h2>Let&apos;s work together.</h2>
           </span>
           <div className={styles.imageContainer}>
-            <Image
-              fill={true}
+            <img
               alt={"image"}
               src={`https://github.com/fluffyjohnny/portfolio/blob/main/public/images/contact.jpeg?raw=true`}
-              sizes={"(max-width: 640px) 80%, 100%"}
               draggable={"false"}
-              priority
             />
           </div>
           <motion.div style={{ x }} className={styles.buttonContainer}>

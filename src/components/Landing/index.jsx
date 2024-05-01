@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import styles from "./style.module.scss";
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
@@ -49,13 +48,10 @@ export default function Home() {
       animate="enter"
       className={styles.landing}
     >
-      <Image
+      <img
         src="https://github.com/fluffyjohnny/portfolio/blob/main/public/images/background.jpg?raw=true"
-        fill={true}
         alt={"background"}
-        sizes={"(max-width: 640px) 80%, 100%"}
         draggable={"false"}
-        priority
       />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>

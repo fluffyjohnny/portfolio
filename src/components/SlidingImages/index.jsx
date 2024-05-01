@@ -132,13 +132,10 @@ export default function Index() {
                 style={{ backgroundColor: project.color }}
               >
                 <div className={styles.imageContainer}>
-                  <Image
-                    fill={true}
+                  <img
                     alt={"icon"}
                     src={project.src}
-                    sizes={"(max-width: 640px) 80%, 100%"}
                     draggable={"false"}
-                    priority
                   />
                 </div>
               </div>
@@ -154,13 +151,10 @@ export default function Index() {
                 style={{ backgroundColor: project.color }}
               >
                 <div key={index} className={styles.imageContainer}>
-                  <Image
-                    fill={true}
+                  <img
                     alt={"icon"}
                     src={project.src}
-                    sizes={"(max-width: 640px) 80%, 100%"}
                     draggable={"false"}
-                    priority
                   />
                 </div>
               </div>
@@ -176,13 +170,10 @@ export default function Index() {
                 style={{ backgroundColor: project.color }}
               >
                 <div key={index} className={styles.imageContainer}>
-                  <Image
-                    fill={true}
+                  <img
                     alt={"icon"}
                     src={project.src}
-                    sizes={"(max-width: 640px) 80%, 100%"}
                     draggable={"false"}
-                    priority
                   />
                 </div>
               </div>
