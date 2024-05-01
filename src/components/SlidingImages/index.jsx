@@ -134,7 +134,7 @@ export default function Index() {
                 <div className={styles.imageContainer}>
                   <Image
                     fill={true}
-                    alt={"image"}
+                    alt={"icon"}
                     src={project.src}
                     sizes={"(max-width: 640px) 80%, 100%"}
                     draggable={"false"}
@@ -156,7 +156,7 @@ export default function Index() {
                 <div key={index} className={styles.imageContainer}>
                   <Image
                     fill={true}
-                    alt={"image"}
+                    alt={"icon"}
                     src={project.src}
                     sizes={"(max-width: 640px) 80%, 100%"}
                     draggable={"false"}
@@ -178,7 +178,7 @@ export default function Index() {
                 <div key={index} className={styles.imageContainer}>
                   <Image
                     fill={true}
-                    alt={"image"}
+                    alt={"icon"}
                     src={project.src}
                     sizes={"(max-width: 640px) 80%, 100%"}
                     draggable={"false"}

@@ -51,12 +51,12 @@ export default function Index() {
         </div>
         <div className={styles.border}></div>
         <Image
-          src="https://github.com/fluffyjohnny/portfolio/blob/main/public/images/branch.png?raw=true"
-          width="1000"
-          height="1000"
-          alt="branch"
+          src={"https://github.com/fluffyjohnny/portfolio/blob/main/public/images/branch.png?raw=true"}
+          width={"1000"}
+          height={"1000"}
+          alt={"branch"}
           className={styles.branch}
-          draggable="false"
+          draggable={"false"}
           priority
         />
       </div>

@@ -52,9 +52,9 @@ export default function Home() {
       <Image
         src="https://github.com/fluffyjohnny/portfolio/blob/main/public/images/background.jpg?raw=true"
         fill={true}
-        alt="background"
+        alt={"background"}
         sizes={"(max-width: 640px) 80%, 100%"}
-        draggable="false"
+        draggable={"false"}
         priority
       />
       <div className={styles.sliderContainer}>
