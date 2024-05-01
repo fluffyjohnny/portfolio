@@ -136,6 +136,7 @@ export default function Index() {
                     alt={"icon"}
                     src={project.src}
                     draggable={"false"}
+                    loading={"lazy"}
                   />
                 </div>
               </div>
@@ -155,6 +156,7 @@ export default function Index() {
                     alt={"icon"}
                     src={project.src}
                     draggable={"false"}
+                    loading={"lazy"}
                   />
                 </div>
               </div>
@@ -174,6 +176,7 @@ export default function Index() {
                     alt={"icon"}
                     src={project.src}
                     draggable={"false"}
+                    loading={"lazy"}
                   />
                 </div>
               </div>

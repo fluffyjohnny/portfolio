@@ -28,6 +28,7 @@ export default function Index() {
               alt={"image"}
               src={`https://github.com/fluffyjohnny/portfolio/blob/main/public/images/contact.jpeg?raw=true`}
               draggable={"false"}
+              loading={"lazy"}
             />
           </div>
           <motion.div style={{ x }} className={styles.buttonContainer}>

@@ -5,16 +5,16 @@ import { useTransform, useScroll, motion } from "framer-motion";
 
 const images = [
   "toStrong.png",
-  "hoc.png",
-  "homespro.png",
-  "aimusing.png",
   "heymateM.png",
   "tweeter.png",
-  "maxmerge.png",
+  "aimusing.png",
   "petbnb.png",
+  "calton.png",
+  "hoc.png",
+  "maxmerge.png",
   "fusion.png",
   "scheduler.png",
-  "calton.png",
+  "homespro.png",
   "jade.png",
 ];
 
@@ -50,10 +50,14 @@ export default function Home() {
       <div ref={gallery} className={styles.gallery}>
         <div className={styles.topArc}></div>
         <div className={styles.galleryContainer}>
-          <Column images={[images[0], images[1], images[2]]} y={y} />
+          <div className={styles.outerColumn}>
+            <Column images={[images[0], images[1], images[2]]} y={y} />
+          </div>
           <Column images={[images[3], images[4], images[5]]} y={y2} />
           <Column images={[images[6], images[7], images[8]]} y={y3} />
-          <Column images={[images[9], images[10], images[11]]} y={y4} />
+          <div className={styles.outerColumn}>
+            <Column images={[images[9], images[10], images[11]]} y={y4} />
+          </div>
         </div>
         <div className={styles.bottomArc}></div>
       </div>
@@ -71,6 +75,7 @@ const Column = ({ images, y }) => {
               src={`https://github.com/fluffyjohnny/portfolio/blob/main/public/images/${src}?raw=true`}
               alt={"project"}
               draggable={"false"}
+              loading={"lazy"}
             />
           </div>
         );

@@ -56,6 +56,7 @@ export default function Index() {
           alt={"branch"}
           className={styles.branch}
           draggable={"false"}
+          loading={"lazy"}
         />
       </div>
     </main>

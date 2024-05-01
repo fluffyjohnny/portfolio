@@ -52,6 +52,7 @@ export default function Home() {
         src="https://github.com/fluffyjohnny/portfolio/blob/main/public/images/background.jpg?raw=true"
         alt={"background"}
         draggable={"false"}
+        loading={"eager"}
       />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
