@@ -33,7 +33,7 @@ export default function Index() {
           </div>
           <motion.div style={{ x }} className={styles.buttonContainer}>
             <Rounded backgroundColor={"#283618"} className={styles.button}>
-              <p>Get in touch</p>
+              <p>Contact me ↓</p>
             </Rounded>
           </motion.div>
         </div>
