@@ -40,14 +40,18 @@ export default function Index() {
         <div id={"contact"} className={styles.nav}>
           <div className={styles.navBtns}>
             <a href={"mailto:john.chia0106@gmail.com"} type={"email"}>
-              <Rounded>
-                <p>john.chia0106@gmail.com</p>
-              </Rounded>
+              <Magnetic>
+                <div>
+                  <p>john.chia0106@gmail.com</p>
+                </div>
+              </Magnetic>
             </a>
             <a href={"tel:2368666029"} type={"phone"}>
-              <Rounded>
-                <p>+1 236 866 6029</p>
-              </Rounded>
+              <Magnetic>
+                <div>
+                  <p>+1 236 866 6029</p>
+                </div>
+              </Magnetic>
             </a>
           </div>
           <div className={styles.socials}>
@@ -75,7 +79,7 @@ export default function Index() {
               </Magnetic>
               <Magnetic>
                 <a
-                  href={"https://www.linkedin.com/in/john-chia-744b30161/"}
+                  href={"www.linkedin.com/in/cheng-hao-chia-744b30161"}
                   target={"_blank"}
                   type={"link"}
                 >

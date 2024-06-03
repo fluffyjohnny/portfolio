@@ -70,7 +70,9 @@ export default function Index() {
         <div className={styles.logoContainer}>
           <Magnetic>
             <img
-              src={"https://github.com/fluffyjohnny/portfolio/blob/main/public/images/logo.png?raw=true"}
+              src={
+                "https://github.com/fluffyjohnny/portfolio/blob/main/public/images/logo.png?raw=true"
+              }
               width={"60"}
               height={"60"}
               className={styles.logo}
@@ -114,7 +116,7 @@ export default function Index() {
           <iframe
             className={styles.spotify}
             src={
-              "https://open.spotify.com/embed/track/7hZnAqzJGdz58gS4XxRowB?utm_source=generator"
+              "https://open.spotify.com/embed/track/6tQQYvGkmpjWLVmJKc0Rpr?utm_source=generator&theme=0"
             }
             width={"85%"}
             height={"80"}
