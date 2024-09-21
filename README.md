@@ -2,7 +2,8 @@
 
 ## Description
 
-johnchia.ca
+[johnchia.ca](https://johnchia.ca)
+
 Welcome to my web developer portfolio! This portfolio showcases my skills, projects, and experiences as a web developer. Whether you're an employer, collaborator, or just curious about my work, I hope you find something interesting here.
 
 ## Features
